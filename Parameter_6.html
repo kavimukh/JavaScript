@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Script Title</title>
+	// Find sum of odd and even number
+
+	<script type="text/javascript">
+	
+/*
+		function myOddEven()
+		{
+			var number1 = 30; 
+			oe = number1%2;
+			alert(oe);
+		}
+*/
+		var globalVar = 10;
+		function myAdd(){
+			var sumOddNumber = 0;
+			var sumEvenNumber = 0;
+			// alert('Total Number is ' + arguments.length);
+			for (i=0; i< arguments.length; i++){
+				if ((arguments[i]%2) == 0)
+				{
+					//alert(sumEvenNumber); 
+					// First learn about Array.
+					// Write a program to display odd and even number. Also count number of odd and even number.
+					// Write a program to find sum of odd and even number;
+					sumEvenNumber = sumEvenNumber+arguments[i];
+				}
+				else
+				{
+					//alert(sumOddNumber);
+					sumOddNumber = sumOddNumber+arguments[i];
+				}
+			}
+			return [sumEvenNumber, sumOddNumber];
+		}
+		result = myAdd(10, 20, 3, 40, 4, 5);
+		//alert("Sum of ODD number is " + result[0]);
+		//alert("Sum of Even number is " + result[1]);
+		console.log(result[0]);
+		console.log(globalVar); // to see global variable type globalvar in console
+	</script>
+</head>
+<body>
+	<h1 id="myText">Test1</h1>
+</body>
+</html>

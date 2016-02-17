@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Script Title</title>
+	<script type="text/javascript">
+		function substitute() {
+			alert('Please Enter First Name');
+			var myValue = document.getElementById("myTextBox").value;
+			if (myValue.length == 0){
+				alert('Please Enter First Name');
+			}
+		}	
+	</script>
+</head>
+<body>
+	<h1 id="my">JavaScript Example</h1>
+	<input type="text" id="myTextBox"/>
+	<input type="submit" value="Click Me" onclick="substitute" />
+</body>
+</html>

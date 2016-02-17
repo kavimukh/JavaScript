@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Script Title</title>
+	<script type="text/javascript">
+		function myAdd(){
+			var tempValue = 0;
+			alert('Total Number is ' + arguments.length);
+			for (i=0; i< arguments.length; i++){
+				tempValue = tempValue+arguments[i];
+			}
+			return (tempValue);
+		}
+		var result = myAdd(10, 20, 3, 40, 4, 5);
+		alert(result);
+		
+	</script>
+</head>
+<body>
+	<h1 id="myText">Test1</h1>
+</body>
+</html>
